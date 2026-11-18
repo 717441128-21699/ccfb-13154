@@ -16,3 +16,17 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# 构建产物
+dist/
+*.tsbuildinfo
+
+# E2E 运行产物（保留 test-media 下的输入素材）
+test-media/out/
+test-media/segA.mp4
+test-media/segB.mp4
+test-media/list.txt
+
+# 本地调试脚本
+dbg.ts
+dbg*.mjs

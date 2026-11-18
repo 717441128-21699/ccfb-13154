@@ -1,0 +1,26 @@
+{
+  "name": "drama-subtitle-layout",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "竖屏短剧字幕自动排版：浏览器内解码，自动避人脸/画面文字/视觉焦点，导出带位置信息的 ASS 字幕",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "node scripts/e2e-test.mjs",
+    "postinstall": "node scripts/copy-mediapipe-wasm.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.2.3",
+    "mp4box": "^2.5.0"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1",
+    "typescript": "~7.0.2",
+    "vite": "^8.0.0",
+    "vitest": "^5.1.1"
+  }
+}
